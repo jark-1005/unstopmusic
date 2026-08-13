@@ -1,12 +1,11 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { trendingMusic, freshArrivals } from "../../data/music";
-import { Disc, ChevronLeft, ChevronRight, Play, AudioLines } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, AudioLines } from "lucide-react";
 import { FaSpotify, FaApple, FaYoutube } from "react-icons/fa";
 import FadeIn from "../../components/animations/FadeIn";
 import PageTransition from "../../components/animations/PageTransition";
 import ImageReveal from "../../components/animations/ImageReveal";
 import VinylArtwork from "../../components/cards/VinylArtwork";
-import MagneticButton from "../../components/buttons/MagneticButton";
 import SectionMarker from "../../components/common/SectionMarker";
 
 export default function Music() {
@@ -26,11 +25,11 @@ export default function Music() {
 
     return (
         <PageTransition>
-            <div className="pt-32 pb-24 min-h-screen bg-[#111827] text-[#F5E6C8] overflow-hidden relative">
+            <div className="pt-32 pb-24 min-h-screen bg-[#000000] text-[#EBECF0] overflow-hidden relative">
                 
                 {/* Visual Ambient Details */}
-                <div className="absolute top-[10%] right-[-10%] w-[500px] h-[500px] bg-[#D4AF37]/3 blur-[130px] rounded-full pointer-events-none -z-10" />
-                <div className="absolute bottom-[20%] left-[-15%] w-[600px] h-[600px] bg-[#D4AF37]/3 blur-[160px] rounded-full pointer-events-none -z-10" />
+                <div className="absolute top-[10%] right-[-10%] w-[500px] h-[500px] bg-[#FE7F2E]/3 blur-[130px] rounded-full pointer-events-none -z-10" />
+                <div className="absolute bottom-[20%] left-[-15%] w-[600px] h-[600px] bg-[#FE7F2E]/3 blur-[160px] rounded-full pointer-events-none -z-10" />
 
                 <div className="max-w-7xl mx-auto px-4 md:px-8 space-y-32">
                     
@@ -42,9 +41,9 @@ export default function Music() {
                             </div>
                             <h1 className="text-5xl md:text-8xl font-black text-white uppercase tracking-tighter leading-none select-none">
                                 DISCOVER <br />
-                                <span className="text-gradient-gold">THE CATALOG</span>
+                                <span className="text-gradient-accent">THE CATALOG</span>
                             </h1>
-                            <p className="text-[#F5E6C8]/80 text-base md:text-lg max-w-xl mx-auto leading-relaxed font-light">
+                            <p className="text-[#EBECF0]/80 text-base md:text-lg max-w-xl mx-auto leading-relaxed font-light">
                                 Explore official physical releases, conceptual EP tracks, and fresh arrival singles curated under the Unstoppable Music label.
                             </p>
                         </div>
@@ -54,13 +53,13 @@ export default function Music() {
                     {featuredTrack && (
                         <section className="space-y-10 text-left">
                             <FadeIn>
-                                <span className="text-[10px] font-mono tracking-[0.25em] text-[#D4AF37] uppercase block mb-4">
+                                <span className="text-[10px] font-mono tracking-[0.25em] text-[#FE7F2E] uppercase block mb-4">
                                     01 / FEATURED SPOTLIGHT
                                 </span>
                             </FadeIn>
 
-                            <div className="glass-panel p-8 md:p-14 rounded-3xl border-[#D4AF37]/25 relative overflow-hidden bg-[#1B1F24]/90 flex flex-col lg:flex-row items-center gap-12 group/featured">
-                                <div className="absolute inset-0 bg-gradient-to-tr from-[#D4AF37]/5 via-transparent to-transparent pointer-events-none" />
+                            <div className="glass-panel p-8 md:p-14 rounded-3xl border-[#FE7F2E]/25 relative overflow-hidden bg-[#233D4C]/40 flex flex-col lg:flex-row items-center gap-12 group/featured">
+                                <div className="absolute inset-0 bg-gradient-to-tr from-[#FE7F2E]/5 via-transparent to-transparent pointer-events-none" />
                                 
                                 {/* Featured Visual with Vinyl slide on hover */}
                                 <div className="w-full max-w-[340px] md:max-w-[420px] aspect-square shrink-0 relative z-10">
@@ -70,15 +69,15 @@ export default function Music() {
                                 {/* Featured Track Meta */}
                                 <div className="flex-grow space-y-6 relative z-10 text-left">
                                     <div className="flex items-center gap-3">
-                                        <AudioLines className="w-5 h-5 text-[#D4AF37]" />
+                                        <AudioLines className="w-5 h-5 text-[#FE7F2E]" />
                                         <span className="text-xs font-mono tracking-wider text-slate-400">TRENDING RELEASE // #01</span>
                                     </div>
 
                                     <div className="space-y-2">
-                                        <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight leading-none group-hover/featured:text-[#F5D97A] transition-colors">
+                                        <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight leading-none group-hover/featured:text-[#FF9F66] transition-colors">
                                             {featuredTrack.title}
                                         </h2>
-                                        <p className="text-xl text-[#F5E6C8]/80 font-bold">{featuredTrack.artist}</p>
+                                        <p className="text-xl text-[#EBECF0]/80 font-bold">{featuredTrack.artist}</p>
                                     </div>
 
                                     <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-slate-500 uppercase tracking-widest pt-2">
@@ -121,7 +120,7 @@ export default function Music() {
                     {/* OTHER TRENDING MUSIC LAYOUT: ASYMMETRIC GRID */}
                     <section className="space-y-12 text-left">
                         <FadeIn>
-                            <span className="text-[10px] font-mono tracking-[0.25em] text-[#D4AF37] uppercase block mb-4">
+                            <span className="text-[10px] font-mono tracking-[0.25em] text-[#FE7F2E] uppercase block mb-4">
                                 02 / TRENDING CATALOG
                             </span>
                         </FadeIn>
@@ -136,7 +135,7 @@ export default function Music() {
                                 return (
                                     <div key={track.id} className={`${gridClass} flex flex-col h-full`}>
                                         <FadeIn delay={index * 0.1}>
-                                            <div className="glass-panel group rounded-3xl overflow-hidden border-white/5 hover:border-[#D4AF37]/35 p-6 flex flex-col justify-between h-full bg-[#1B1F24]/75 shadow-xl transition-all duration-300">
+                                            <div className="glass-panel group rounded-3xl overflow-hidden border-white/5 hover:border-[#FE7F2E]/35 p-6 flex flex-col justify-between h-full bg-[#233D4C]/30 shadow-xl transition-all duration-300">
                                                 
                                                 {/* Artwork */}
                                                 <div className="w-full relative aspect-video rounded-2xl overflow-hidden bg-black/25">
@@ -150,7 +149,7 @@ export default function Music() {
                                                     
                                                     {/* Play Overlays */}
                                                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                                                        <div className="w-12 h-12 rounded-full bg-[#D4AF37] flex items-center justify-center text-[#111827] shadow-lg">
+                                                        <div className="w-12 h-12 rounded-full bg-[#FE7F2E] flex items-center justify-center text-[#000000] shadow-lg">
                                                             <Play className="w-5 h-5 fill-current translate-x-0.5" />
                                                         </div>
                                                     </div>
@@ -159,10 +158,10 @@ export default function Music() {
                                                 {/* Text Info */}
                                                 <div className="pt-6 space-y-4">
                                                     <div className="space-y-1">
-                                                        <span className="text-[9px] font-mono text-[#D4AF37] uppercase tracking-widest block">
+                                                        <span className="text-[9px] font-mono text-[#FE7F2E] uppercase tracking-widest block">
                                                             {track.category} // RELEASES
                                                         </span>
-                                                        <h3 className="text-xl md:text-2xl font-black text-white uppercase tracking-wide truncate group-hover:text-[#F5D97A] transition-colors">
+                                                        <h3 className="text-xl md:text-2xl font-black text-white uppercase tracking-wide truncate group-hover:text-[#FF9F66] transition-colors">
                                                             {track.title}
                                                         </h3>
                                                         <p className="text-slate-400 font-semibold text-sm">{track.artist}</p>
@@ -191,8 +190,8 @@ export default function Music() {
                     {/* FRESH ARRIVALS: HORIZONTAL ARTWORK SCROLL RAIL */}
                     <section className="space-y-10 text-left">
                         <FadeIn>
-                            <div className="flex items-center justify-between border-b border-[#D4AF37]/20 pb-4">
-                                <span className="text-[10px] font-mono tracking-[0.25em] text-[#D4AF37] uppercase block">
+                            <div className="flex items-center justify-between border-b border-[#FE7F2E]/20 pb-4">
+                                <span className="text-[10px] font-mono tracking-[0.25em] text-[#FE7F2E] uppercase block">
                                     03 / FRESH ARRIVALS
                                 </span>
                                 
@@ -200,13 +199,13 @@ export default function Music() {
                                 <div className="flex items-center gap-3">
                                     <button 
                                         onClick={() => scroll("left")} 
-                                        className="w-10 h-10 rounded-full border border-white/10 hover:border-[#D4AF37] flex items-center justify-center text-slate-400 hover:text-white transition-all bg-[#1B1F24] cursor-pointer"
+                                        className="w-10 h-10 rounded-full border border-white/10 hover:border-[#FE7F2E] flex items-center justify-center text-slate-400 hover:text-white transition-all bg-[#233D4C]/30 cursor-pointer"
                                     >
                                         <ChevronLeft className="w-5 h-5" />
                                     </button>
                                     <button 
                                         onClick={() => scroll("right")} 
-                                        className="w-10 h-10 rounded-full border border-white/10 hover:border-[#D4AF37] flex items-center justify-center text-slate-400 hover:text-white transition-all bg-[#1B1F24] cursor-pointer"
+                                        className="w-10 h-10 rounded-full border border-white/10 hover:border-[#FE7F2E] flex items-center justify-center text-slate-400 hover:text-white transition-all bg-[#233D4C]/30 cursor-pointer"
                                     >
                                         <ChevronRight className="w-5 h-5" />
                                     </button>
@@ -220,13 +219,13 @@ export default function Music() {
                             className="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-6 w-full pointer-events-auto [scrollbar-width:none] [-ms-overflow-style:none]"
                             style={{ WebkitOverflowScrolling: "touch" }}
                         >
-                            {freshArrivals.map((track, index) => (
+                            {freshArrivals.map((track) => (
                                 <div 
                                     key={track.id} 
                                     className="snap-start shrink-0 w-[280px] md:w-[320px] flex flex-col gap-4 group/rail" 
                                 >
                                     {/* Album Cover wrapper */}
-                                    <div className="relative w-full aspect-square rounded-2xl overflow-hidden border border-white/5 bg-[#1B1F24] shadow-md">
+                                    <div className="relative w-full aspect-square rounded-2xl overflow-hidden border border-white/5 bg-[#233D4C]/20 shadow-md">
                                         <ImageReveal className="w-full h-full">
                                             <img 
                                                 src={track.coverUrl} 
@@ -237,7 +236,7 @@ export default function Music() {
                                         
                                         {/* Play Overlay */}
                                         <div className="absolute inset-0 bg-black/30 opacity-0 group-hover/rail:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                                            <div className="w-10 h-10 rounded-full bg-[#D4AF37] flex items-center justify-center text-[#111827] shadow-lg">
+                                            <div className="w-10 h-10 rounded-full bg-[#FE7F2E] flex items-center justify-center text-[#000000] shadow-lg">
                                                 <Play className="w-4 h-4 fill-current translate-x-0.5" />
                                             </div>
                                         </div>
@@ -245,10 +244,10 @@ export default function Music() {
 
                                     {/* Copy details */}
                                     <div className="space-y-1 text-left px-1">
-                                        <span className="text-[8px] font-mono text-[#D4AF37] uppercase tracking-widest block">
+                                        <span className="text-[8px] font-mono text-[#FE7F2E] uppercase tracking-widest block">
                                             {track.category}
                                         </span>
-                                        <h4 className="text-base font-bold text-white uppercase truncate group-hover/rail:text-[#F5D97A] transition-colors">
+                                        <h4 className="text-base font-bold text-white uppercase truncate group-hover/rail:text-[#FF9F66] transition-colors">
                                             {track.title}
                                         </h4>
                                         <p className="text-slate-400 text-xs truncate">{track.artist}</p>

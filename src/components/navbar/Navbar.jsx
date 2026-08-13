@@ -57,13 +57,13 @@ export default function Navbar() {
                             <img
                                 src="/unstoppable.png"
                                 alt="Unstoppable Music Logo"
-                                className="h-full w-auto max-w-[150px] min-[375px]:max-w-[170px] md:max-w-[210px] lg:max-w-[260px] object-contain transition-all duration-300 group-hover:scale-105 filter drop-shadow-[0_0_8px_rgba(212,175,55,0.4)] group-hover:drop-shadow-[0_0_12px_rgba(212,175,55,0.6)] shrink-0"
+                                className="h-full w-auto max-w-[150px] min-[375px]:max-w-[170px] md:max-w-[210px] lg:max-w-[260px] object-contain transition-all duration-300 group-hover:scale-105 filter drop-shadow-[0_0_8px_rgba(254,127,46,0.4)] group-hover:drop-shadow-[0_0_12px_rgba(254,127,46,0.6)] shrink-0"
                             />
                         </div>
                     </Link>
 
                     {/* Links */}
-                    <div className="hidden lg:flex items-center gap-1 bg-[#1B1F24]/80 rounded-full p-1.5 border border-white/5">
+                    <div className="hidden lg:flex items-center gap-1 bg-[#233D4C]/35 rounded-full p-1.5 border border-white/5">
                         {navLinks.map((link) => {
                             const Icon = link.icon;
                             const isActive = location.pathname === link.path;
@@ -72,7 +72,7 @@ export default function Navbar() {
                                     key={link.path}
                                     to={link.path}
                                     className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition-all duration-300 cursor-pointer ${isActive
-                                        ? "bg-gradient-to-r from-[#D4AF37] to-[#F5D97A] text-[#111827] shadow-lg shadow-[#D4AF37]/20"
+                                        ? "bg-gradient-to-r from-[#FE7F2E] to-[#FF9F66] text-[#000000] shadow-lg shadow-[#FE7F2E]/20"
                                         : "text-slate-400 hover:text-white hover:bg-white/5"
                                         }`}
                                 >
@@ -86,7 +86,7 @@ export default function Navbar() {
                     {/* CTA Button */}
                     <Link
                         to="/contact"
-                        className="flex items-center gap-1.5 bg-gradient-to-r from-[#D4AF37] to-[#F5D97A] text-[#111827] font-bold text-[10px] min-[375px]:text-xs sm:text-sm px-3 min-[375px]:px-4 py-2 sm:py-2.5 rounded-full hover:brightness-110 shadow-lg shadow-[#D4AF37]/20 transition-all hover:scale-105 cursor-pointer shrink-0"
+                        className="flex items-center gap-1.5 bg-gradient-to-r from-[#FE7F2E] to-[#FF9F66] text-[#000000] font-bold text-[10px] min-[375px]:text-xs sm:text-sm px-3 min-[375px]:px-4 py-2 sm:py-2.5 rounded-full hover:brightness-110 shadow-lg shadow-[#FE7F2E]/20 transition-all hover:scale-105 cursor-pointer shrink-0"
                     >
                         <span>Let's Connect</span>
                         <Send className="w-3 h-3 min-[375px]:w-3.5 min-[375px]:h-3.5" />
@@ -113,18 +113,18 @@ export default function Navbar() {
                                         key={link.path}
                                         to={link.path}
                                         className={`flex flex-col items-center gap-1 py-1 px-0.5 rounded-xl transition-all duration-300 relative flex-1 min-w-0 text-center select-none ${isActive
-                                            ? "text-[#D4AF37] font-semibold"
-                                            : "text-slate-400 hover:text-[#F5E6C8]"
+                                            ? "text-[#FE7F2E] font-semibold"
+                                            : "text-slate-400 hover:text-[#EBECF0]"
                                             }`}
                                     >
                                         {isActive && (
                                             <motion.div
                                                 layoutId="activeBottomTabBg"
-                                                className="absolute inset-0 bg-gradient-to-r from-[#D4AF37]/15 to-[#F5D97A]/15 border-t border-[#D4AF37]/40 rounded-xl -z-10"
+                                                className="absolute inset-0 bg-gradient-to-r from-[#FE7F2E]/15 to-[#FF9F66]/15 border-t border-[#FE7F2E]/40 rounded-xl -z-10"
                                                 transition={{ type: "spring", stiffness: 350, damping: 30 }}
                                             />
                                         )}
-                                        <Icon className={`w-5 h-5 transition-transform duration-300 ${isActive ? "scale-105 text-[#D4AF37]" : ""}`} />
+                                        <Icon className={`w-5 h-5 transition-transform duration-300 ${isActive ? "scale-105 text-[#FE7F2E]" : ""}`} />
                                         <span className="text-[8.5px] uppercase tracking-wider font-semibold truncate block w-full">{link.name}</span>
                                     </Link>
                                 );

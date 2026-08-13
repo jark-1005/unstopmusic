@@ -21,40 +21,40 @@ canvas {
 
 @layer base {
     body {
-        @apply bg-[#111827] text-[#F5E6C8] font-sans antialiased selection:bg-[#D4AF37] selection:text-[#111827];
+        @apply bg-[#000000] text-[#EBECF0] font-sans antialiased selection:bg-[#FE7F2E] selection:text-[#000000];
     }
 }
 
 /* Custom Glow Effects & Glassmorphism */
 .glass-panel {
-    background: rgba(27, 31, 36, 0.75); /* Deep Black / Near Black */
+    background: rgba(35, 61, 76, 0.25); /* Slate Blue semi-transparent */
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(212, 175, 55, 0.08); /* Subtle Gold border */
+    border: 1px solid rgba(254, 127, 46, 0.15); /* Subtle Orange border */
 }
 
 .glass-card {
-    background: rgba(27, 31, 36, 0.6); /* Near Black */
+    background: rgba(35, 61, 76, 0.15); /* Slate Blue semi-transparent */
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.04);
     transition: all 0.3s ease;
 }
 
 .glass-card:hover {
-    border-color: rgba(212, 175, 55, 0.45); /* Primary Gold */
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+    border-color: rgba(254, 127, 46, 0.45); /* Primary Orange */
+    box-shadow: 0 0 25px rgba(254, 127, 46, 0.15);
 }
 
-.glow-gold {
-    box-shadow: 0 0 35px rgba(212, 175, 55, 0.35);
+.glow-gold, .glow-accent {
+    box-shadow: 0 0 35px rgba(254, 127, 46, 0.35);
 }
 
-.glow-gold-ring {
-    box-shadow: 0 0 50px rgba(212, 175, 55, 0.5), inset 0 0 30px rgba(212, 175, 55, 0.3);
+.glow-gold-ring, .glow-accent-ring {
+    box-shadow: 0 0 50px rgba(254, 127, 46, 0.5), inset 0 0 30px rgba(254, 127, 46, 0.3);
 }
 
-.text-gradient-gold {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] via-[#F5D97A] to-[#D4AF37];
+.text-gradient-gold, .text-gradient-accent {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FE7F2E] via-[#FF9F66] to-[#FE7F2E];
 }
 
 /* Swiper Custom Pagination */
@@ -67,9 +67,9 @@ canvas {
     cursor: pointer;
 }
 .swiper-pagination-custom .swiper-pagination-bullet-active {
-    background: #D4AF37 !important;
+    background: #FE7F2E !important;
     width: 24px !important;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    box-shadow: 0 0 10px rgba(254, 127, 46, 0.5);
 }
 
 /* Cinematic Splash Screen Overlays */
@@ -77,8 +77,8 @@ canvas {
     background: radial-gradient(circle at center, transparent 20%, rgba(0, 0, 0, 0.95) 100%);
 }
 
-.bg-gold-radial-glow {
-    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.12) 0%, transparent 65%);
+.bg-gold-radial-glow, .bg-accent-radial-glow {
+    background: radial-gradient(circle at center, rgba(254, 127, 46, 0.12) 0%, transparent 65%);
 }
 
 @keyframes grain-animation {

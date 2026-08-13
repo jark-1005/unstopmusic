@@ -33,23 +33,23 @@ export default function VinylArtwork({ coverUrl, title }) {
                 <div className="absolute inset-10 rounded-full border border-zinc-900/20 opacity-50" />
                 <div className="absolute inset-14 rounded-full border border-zinc-900/15 opacity-40" />
                 
-                {/* Vinyl Gold Sticker Label */}
-                <div className="w-[32%] h-[32%] rounded-full bg-[#D4AF37] flex items-center justify-center p-[1px] border border-[#111827]/10 z-10 shadow-lg">
-                    <div className="w-full h-full rounded-full bg-[#111827] overflow-hidden flex items-center justify-center relative">
+                {/* Vinyl Orange Sticker Label */}
+                <div className="w-[32%] h-[32%] rounded-full bg-[#FE7F2E] flex items-center justify-center p-[1px] border border-[#000000]/10 z-10 shadow-lg">
+                    <div className="w-full h-full rounded-full bg-[#000000] overflow-hidden flex items-center justify-center relative">
                         <img 
                             src={coverUrl} 
                             alt="" 
                             className="w-full h-full object-cover opacity-50 absolute inset-0 pointer-events-none"
                         />
                         {/* Spindle hole */}
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#111827] border border-[#D4AF37]/50 z-20" />
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#000000] border border-[#FE7F2E]/50 z-20" />
                     </div>
                 </div>
             </motion.div>
 
             {/* The Sleeve (Front) */}
             <motion.div
-                className="relative z-10 bg-[#1B1F24] rounded-2xl overflow-hidden shadow-2xl border border-white/5 aspect-square"
+                className="relative z-10 bg-[#233D4C]/25 rounded-2xl overflow-hidden shadow-2xl border border-white/5 aspect-square"
                 variants={{
                     initial: { scale: 1 },
                     hover: { scale: 1.02 }

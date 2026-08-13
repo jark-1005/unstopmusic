@@ -11,7 +11,7 @@ export default function Footer() {
                     <img 
                         src="/unstoppable.png" 
                         alt="Unstoppable Music Logo" 
-                        className="h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105 filter drop-shadow-[0_0_6px_rgba(212,175,55,0.3)] group-hover:drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]"
+                        className="h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105 filter drop-shadow-[0_0_6px_rgba(254,127,46,0.3)] group-hover:drop-shadow-[0_0_10px_rgba(254,127,46,0.5)]"
                     />
                 </div>
 
@@ -21,7 +21,7 @@ export default function Footer() {
                         href="https://x.com/UProductio86683" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-[#D4AF37] hover:border-[#D4AF37]/50 hover:bg-[#D4AF37]/10 transition-all"
+                        className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-[#FE7F2E] hover:border-[#FE7F2E]/50 hover:bg-[#FE7F2E]/10 transition-all"
                     >
                         <FaTwitter className="w-4 h-4" />
                     </a>
@@ -29,7 +29,7 @@ export default function Footer() {
                         href="https://www.instagram.com/unstoppable.production/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-[#D4AF37] hover:border-[#D4AF37]/50 hover:bg-[#D4AF37]/10 transition-all"
+                        className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-[#FE7F2E] hover:border-[#FE7F2E]/50 hover:bg-[#FE7F2E]/10 transition-all"
                     >
                         <FaInstagram className="w-4 h-4" />
                     </a>
@@ -37,7 +37,7 @@ export default function Footer() {
                         href="https://www.facebook.com/unstoppableproduction?mibextid=wwXIfr&mibextid=wwXIfr" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-[#D4AF37] hover:border-[#D4AF37]/50 hover:bg-[#D4AF37]/10 transition-all"
+                        className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-[#FE7F2E] hover:border-[#FE7F2E]/50 hover:bg-[#FE7F2E]/10 transition-all"
                     >
                         <FaFacebook className="w-4 h-4" />
                     </a>
@@ -45,7 +45,7 @@ export default function Footer() {
                         href="https://www.youtube.com/@Unstoppableproduction" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-[#D4AF37] hover:border-[#D4AF37]/50 hover:bg-[#D4AF37]/10 transition-all"
+                        className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-[#FE7F2E] hover:border-[#FE7F2E]/50 hover:bg-[#FE7F2E]/10 transition-all"
                     >
                         <FaYoutube className="w-4 h-4" />
                     </a>
