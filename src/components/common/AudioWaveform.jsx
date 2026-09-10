@@ -18,7 +18,7 @@ export default function AudioWaveform({ count = 12, className = "" }) {
             {barData.map((bar) => (
                 <motion.div
                     key={bar.id}
-                    className="w-[2px] bg-[#FE7F2E] rounded-full"
+                    className="w-[2px] bg-[#EEE8AA] rounded-full"
                     initial={{ height: 4 }}
                     animate={{ 
                         height: [4, bar.maxHeight, 4] 

@@ -94,7 +94,7 @@ export default function SplashScreen({ onComplete }) {
             ctx.clearRect(0, 0, displayWidth, displayHeight);
 
             // Audio waveform styles
-            ctx.strokeStyle = "#FE7F2E"; // Site accent orange
+            ctx.strokeStyle = "#EEE8AA"; // Pale Gold accent
             ctx.lineWidth = 1.5;
             const centerY = displayHeight / 2;
 
@@ -148,7 +148,7 @@ export default function SplashScreen({ onComplete }) {
 
             // Render subtle terminal endpoints in Stages 1 & 2
             if (elapsed < 1600) {
-                ctx.fillStyle = "rgba(254, 127, 46, 0.4)";
+                ctx.fillStyle = "rgba(238, 232, 170, 0.4)";
                 ctx.fillRect(0, centerY - 3, 1, 7);
                 ctx.fillRect(displayWidth - 1, centerY - 3, 1, 7);
             }
@@ -186,7 +186,7 @@ export default function SplashScreen({ onComplete }) {
                 initial={{ opacity: 1 }}
                 animate={overlayAnimate}
                 transition={overlayTransition}
-                className="absolute inset-0 bg-[#000000] w-full h-full pointer-events-auto flex items-center justify-center overflow-hidden"
+                className="absolute inset-0 bg-[#1A1A1D] w-full h-full pointer-events-auto flex items-center justify-center overflow-hidden"
                 style={{
                     transform: "translateZ(0)",
                     willChange: "clip-path, opacity"
@@ -201,43 +201,29 @@ export default function SplashScreen({ onComplete }) {
                         exit={{ opacity: 0 }}
                         className="w-full max-w-lg px-8 flex flex-col items-start space-y-6 z-20"
                     >
-                        {/* Upper-left technical tag */}
+                        {/* Upper-left title */}
                         <motion.span 
                             initial={{ opacity: 0, y: 5 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, ease: customEase }}
-                            className="font-mono text-[10px] tracking-[0.25em] text-[#FE7F2E] uppercase"
+                            className="font-mono text-xs tracking-[0.25em] text-[#EEE8AA] uppercase"
                         >
-                            001 / INDEPENDENT SOUND
+                            INDEPENDENT SOUND
                         </motion.span>
 
                         {/* Thin audio wave wrapper */}
                         <div className="w-full h-12 border-y border-white/[0.04] flex items-center relative overflow-hidden">
                             <canvas ref={canvasRef} className="w-full h-full opacity-90" />
-                            
-                            {/* Low opacity digital audio channel markers */}
-                            <div className="absolute inset-x-2 inset-y-1 flex justify-between pointer-events-none opacity-20 text-[7px] font-mono text-[#FE7F2E] uppercase">
-                                <span>L.CH</span>
-                                <span>R.CH</span>
-                            </div>
                         </div>
 
-                        {/* Lower secondary status updates */}
-                        <div className="w-full flex justify-between items-center font-mono text-[9px] tracking-[0.2em] text-[#FE7F2E]/60 h-4">
+                        {/* Lower status update */}
+                        <div className="w-full flex items-center font-mono text-[10px] tracking-[0.2em] text-[#EEE8AA]/70 h-4">
                             <motion.span
                                 initial={{ opacity: 0 }}
-                                animate={stage === "build" ? { opacity: 0.8 } : { opacity: 0 }}
+                                animate={stage === "build" ? { opacity: 0.9 } : { opacity: 0 }}
                                 transition={{ duration: 0.4 }}
                             >
                                 A NEW FREQUENCY
-                            </motion.span>
-                            <motion.span
-                                initial={{ opacity: 0 }}
-                                animate={stage === "build" ? { opacity: 0.8 } : { opacity: 0 }}
-                                transition={{ duration: 0.4, delay: 0.15 }}
-                                className="hidden sm:inline"
-                            >
-                                SIG_LOCK // PROG
                             </motion.span>
                         </div>
                     </motion.div>
@@ -254,7 +240,7 @@ export default function SplashScreen({ onComplete }) {
                                 transition={{ duration: 0.9, delay: 0.05, ease: customEase }}
                                 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] 2xl:text-[7.5rem] font-black tracking-tighter uppercase leading-[0.8] text-white select-none"
                             >
-                                UNSTOPPABLE
+                                UNST<span className="text-red-500">O</span>PPABLE
                             </motion.h1>
                         </div>
 
@@ -266,7 +252,7 @@ export default function SplashScreen({ onComplete }) {
                                 transition={{ duration: 0.9, delay: 0.2, ease: customEase }}
                                 className="flex items-center justify-center"
                             >
-                                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5.5rem] 2xl:text-[6.5rem] font-black tracking-tighter uppercase leading-[0.8] text-[#FE7F2E] select-none">
+                                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5.5rem] 2xl:text-[6.5rem] font-black tracking-tighter uppercase leading-[0.8] text-[#EEE8AA] select-none">
                                     MUSIC
                                 </span>
                             </motion.div>
@@ -277,7 +263,7 @@ export default function SplashScreen({ onComplete }) {
                             initial={prefersReducedMotion ? { width: "100%" } : { width: "0%" }}
                             animate={{ width: "100%" }}
                             transition={{ duration: 1.0, delay: 0.4, ease: customEase }}
-                            className="h-[1.5px] bg-[#FE7F2E]/60 max-w-md my-6 md:my-8"
+                            className="h-[1.5px] bg-[#EEE8AA]/60 max-w-md my-6 md:my-8"
                         />
 
                         {/* Supporting record label details */}
@@ -305,7 +291,7 @@ export default function SplashScreen({ onComplete }) {
                         duration: 0.8,
                         ease: ["easeInOut", customEase]
                     }}
-                    className="absolute left-0 right-0 h-[2px] bg-[#FE7F2E] z-[10000] shadow-[0_0_15px_rgba(254,127,46,0.85)]"
+                    className="absolute left-0 right-0 h-[2px] bg-[#EEE8AA] z-[10000] shadow-[0_0_15px_rgba(238,232,170,0.85)]"
                     style={{ willChange: "top" }}
                 />
             )}

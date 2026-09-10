@@ -1,11 +1,74 @@
+export const featuredReleases = [
+    {
+        id: "release-1",
+        title: "Obsidian Pulse",
+        artist: "Kaelen Vane",
+        genre: "Cinematic Electronic",
+        releaseDate: "2026",
+        coverUrl: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=900&auto=format&fit=crop",
+        duration: "3:48",
+        bpm: "124 BPM",
+        streamingLinks: {
+            spotify: "#",
+            appleMusic: "#",
+            youtube: "#"
+        }
+    },
+    {
+        id: "release-2",
+        title: "Echoes in Amber",
+        artist: "Siren & Static",
+        genre: "Atmospheric R&B",
+        releaseDate: "2026",
+        coverUrl: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=900&auto=format&fit=crop",
+        duration: "4:12",
+        bpm: "96 BPM",
+        streamingLinks: {
+            spotify: "#",
+            appleMusic: "#",
+            youtube: "#"
+        }
+    },
+    {
+        id: "release-3",
+        title: "Midnight Resonance",
+        artist: "Vanguard Sound Lab",
+        genre: "Neo-Soul / Experimental",
+        releaseDate: "2025",
+        coverUrl: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=900&auto=format&fit=crop",
+        duration: "3:55",
+        bpm: "110 BPM",
+        streamingLinks: {
+            spotify: "#",
+            appleMusic: "#",
+            youtube: "#"
+        }
+    },
+    {
+        id: "release-4",
+        title: "Crimson Horizon",
+        artist: "Nyx Rivera",
+        genre: "Dark Synthwave",
+        releaseDate: "2025",
+        coverUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=900&auto=format&fit=crop",
+        duration: "4:30",
+        bpm: "128 BPM",
+        streamingLinks: {
+            spotify: "#",
+            appleMusic: "#",
+            youtube: "#"
+        }
+    }
+];
+
 export const trendingMusic = [
     {
         id: "trending-1",
-        title: "[Placeholder Title 1]",
-        artist: "[Placeholder Artist 1]",
-        category: "[Category / Genre]",
-        releaseDate: "[Release Year / Date]",
-        coverUrl: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=600&auto=format&fit=crop",
+        title: "Obsidian Pulse",
+        artist: "Kaelen Vane",
+        category: "Electronic / Cinematic",
+        releaseDate: "2026",
+        coverUrl: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop",
         streamingLinks: {
             spotify: "#",
             appleMusic: "#",
@@ -14,11 +77,11 @@ export const trendingMusic = [
     },
     {
         id: "trending-2",
-        title: "[Placeholder Title 2]",
-        artist: "[Placeholder Artist 2]",
-        category: "[Category / Genre]",
-        releaseDate: "[Release Year / Date]",
-        coverUrl: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&auto=format&fit=crop",
+        title: "Echoes in Amber",
+        artist: "Siren & Static",
+        category: "Atmospheric R&B",
+        releaseDate: "2026",
+        coverUrl: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop",
         streamingLinks: {
             spotify: "#",
             appleMusic: "#",
@@ -27,11 +90,11 @@ export const trendingMusic = [
     },
     {
         id: "trending-3",
-        title: "[Placeholder Title 3]",
-        artist: "[Placeholder Artist 3]",
-        category: "[Category / Genre]",
-        releaseDate: "[Release Year / Date]",
-        coverUrl: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?q=80&w=600&auto=format&fit=crop",
+        title: "Midnight Resonance",
+        artist: "Vanguard Sound Lab",
+        category: "Neo-Soul",
+        releaseDate: "2025",
+        coverUrl: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=800&auto=format&fit=crop",
         streamingLinks: {
             spotify: "#",
             appleMusic: "#",
@@ -43,11 +106,11 @@ export const trendingMusic = [
 export const freshArrivals = [
     {
         id: "fresh-1",
-        title: "[Placeholder Title A]",
-        artist: "[Placeholder Artist A]",
-        category: "[Category / Genre]",
-        releaseDate: "[Release Year / Date]",
-        coverUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=600&auto=format&fit=crop",
+        title: "Crimson Horizon",
+        artist: "Nyx Rivera",
+        category: "Dark Synthwave",
+        releaseDate: "2026",
+        coverUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=800&auto=format&fit=crop",
         streamingLinks: {
             spotify: "#",
             appleMusic: "#",
@@ -56,11 +119,11 @@ export const freshArrivals = [
     },
     {
         id: "fresh-2",
-        title: "[Placeholder Title B]",
-        artist: "[Placeholder Artist B]",
-        category: "[Category / Genre]",
-        releaseDate: "[Release Year / Date]",
-        coverUrl: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600&auto=format&fit=crop",
+        title: "Solar Drift",
+        artist: "Aura Collective",
+        category: "Ambient Bass",
+        releaseDate: "2026",
+        coverUrl: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?q=80&w=800&auto=format&fit=crop",
         streamingLinks: {
             spotify: "#",
             appleMusic: "#",
@@ -69,11 +132,11 @@ export const freshArrivals = [
     },
     {
         id: "fresh-3",
-        title: "[Placeholder Title C]",
-        artist: "[Placeholder Artist C]",
-        category: "[Category / Genre]",
-        releaseDate: "[Release Year / Date]",
-        coverUrl: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?q=80&w=600&auto=format&fit=crop",
+        title: "Analog Shadows",
+        artist: "Marcus Holt",
+        category: "Hip-Hop / Instrumental",
+        releaseDate: "2025",
+        coverUrl: "https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?q=80&w=800&auto=format&fit=crop",
         streamingLinks: {
             spotify: "#",
             appleMusic: "#",
@@ -82,11 +145,11 @@ export const freshArrivals = [
     },
     {
         id: "fresh-4",
-        title: "[Placeholder Title D]",
-        artist: "[Placeholder Artist D]",
-        category: "[Category / Genre]",
-        releaseDate: "[Release Year / Date]",
-        coverUrl: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=600&auto=format&fit=crop",
+        title: "Velvet Frequency",
+        artist: "Maya Chen",
+        category: "Alternative Pop",
+        releaseDate: "2025",
+        coverUrl: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=800&auto=format&fit=crop",
         streamingLinks: {
             spotify: "#",
             appleMusic: "#",

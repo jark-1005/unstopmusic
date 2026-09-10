@@ -21,40 +21,40 @@ canvas {
 
 @layer base {
     body {
-        @apply bg-[#000000] text-[#EBECF0] font-sans antialiased selection:bg-[#FE7F2E] selection:text-[#000000];
+        @apply bg-[#1A1A1D] text-[#EBECF0] font-sans antialiased selection:bg-[#EEE8AA] selection:text-[#1A1A1D];
     }
 }
 
-/* Custom Glow Effects & Glassmorphism */
+/* Custom Glow Effects & Glassmorphism - Classic Vinyl Analog */
 .glass-panel {
-    background: rgba(35, 61, 76, 0.25); /* Slate Blue semi-transparent */
+    background: rgba(54, 117, 136, 0.16); /* Teal Blue semi-transparent */
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(254, 127, 46, 0.15); /* Subtle Orange border */
+    border: 1px solid rgba(238, 232, 170, 0.15); /* Pale Gold subtle border */
 }
 
 .glass-card {
-    background: rgba(35, 61, 76, 0.15); /* Slate Blue semi-transparent */
+    background: rgba(54, 117, 136, 0.12); /* Teal Blue semi-transparent */
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
 }
 
 .glass-card:hover {
-    border-color: rgba(254, 127, 46, 0.45); /* Primary Orange */
-    box-shadow: 0 0 25px rgba(254, 127, 46, 0.15);
+    border-color: rgba(238, 232, 170, 0.45); /* Pale Gold */
+    box-shadow: 0 0 25px rgba(238, 232, 170, 0.15);
 }
 
 .glow-gold, .glow-accent {
-    box-shadow: 0 0 35px rgba(254, 127, 46, 0.35);
+    box-shadow: 0 0 35px rgba(238, 232, 170, 0.35);
 }
 
 .glow-gold-ring, .glow-accent-ring {
-    box-shadow: 0 0 50px rgba(254, 127, 46, 0.5), inset 0 0 30px rgba(254, 127, 46, 0.3);
+    box-shadow: 0 0 50px rgba(238, 232, 170, 0.45), inset 0 0 30px rgba(160, 82, 45, 0.3);
 }
 
 .text-gradient-gold, .text-gradient-accent {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FE7F2E] via-[#FF9F66] to-[#FE7F2E];
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#EEE8AA] via-[#F7F2CB] to-[#E6D88A];
 }
 
 /* Swiper Custom Pagination */
@@ -67,18 +67,18 @@ canvas {
     cursor: pointer;
 }
 .swiper-pagination-custom .swiper-pagination-bullet-active {
-    background: #FE7F2E !important;
+    background: #EEE8AA !important;
     width: 24px !important;
-    box-shadow: 0 0 10px rgba(254, 127, 46, 0.5);
+    box-shadow: 0 0 10px rgba(238, 232, 170, 0.6);
 }
 
 /* Cinematic Splash Screen Overlays */
 .bg-radial-vignette {
-    background: radial-gradient(circle at center, transparent 20%, rgba(0, 0, 0, 0.95) 100%);
+    background: radial-gradient(circle at center, transparent 20%, rgba(26, 26, 29, 0.98) 100%);
 }
 
 .bg-gold-radial-glow, .bg-accent-radial-glow {
-    background: radial-gradient(circle at center, rgba(254, 127, 46, 0.12) 0%, transparent 65%);
+    background: radial-gradient(circle at center, rgba(238, 232, 170, 0.12) 0%, transparent 65%);
 }
 
 @keyframes grain-animation {

@@ -17,7 +17,7 @@ export default function ImageReveal({ children, className = "", delay = 0.1 }) {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay, ease: [0.76, 0, 0.24, 1] }}
                     style={{ originX: 1 }}
-                    className="absolute inset-0 bg-[#FE7F2E] z-20 pointer-events-none"
+                    className="absolute inset-0 bg-[#EEE8AA] z-20 pointer-events-none"
                 />
                 
                 {/* The secondary dark cover layer */}
@@ -27,7 +27,7 @@ export default function ImageReveal({ children, className = "", delay = 0.1 }) {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: delay + 0.1, ease: [0.76, 0, 0.24, 1] }}
                     style={{ originX: 1 }}
-                    className="absolute inset-0 bg-[#233D4C] z-10 pointer-events-none"
+                    className="absolute inset-0 bg-[#367588] z-10 pointer-events-none"
                 />
 
                 {/* The content (usually the image) */}
