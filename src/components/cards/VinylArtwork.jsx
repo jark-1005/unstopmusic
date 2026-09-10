@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Play, Pause } from "lucide-react";
 
-export default function VinylArtwork({ coverUrl, title, artist, isPlaying: initialPlaying = false, className = "" }) {
+export default function VinylArtwork({ 
+    coverUrl, 
+    videoUrl,
+    title, 
+    artist, 
+    isPlaying: initialPlaying = false, 
+    className = "" 
+}) {
     const [isPlaying, setIsPlaying] = useState(initialPlaying);
     const [isHovered, setIsHovered] = useState(false);
 
@@ -53,7 +60,17 @@ export default function VinylArtwork({ coverUrl, title, artist, isPlaying: initi
                     {/* Vinyl Center Sticker (Classic Vinyl Analog Brand / Cover) */}
                     <div className="w-[34%] h-[34%] rounded-full bg-gradient-to-br from-[#EEE8AA] via-[#A0522D] to-[#367588] p-[2px] z-10 shadow-xl relative flex items-center justify-center">
                         <div className="w-full h-full rounded-full bg-[#1A1A1D] overflow-hidden flex items-center justify-center relative">
-                            {coverUrl ? (
+                            {videoUrl ? (
+                                <video 
+                                    src={videoUrl}
+                                    poster={coverUrl}
+                                    autoPlay 
+                                    loop 
+                                    muted 
+                                    playsInline 
+                                    className="w-full h-full object-cover opacity-60 absolute inset-0 pointer-events-none scale-110"
+                                />
+                            ) : coverUrl ? (
                                 <img 
                                     src={coverUrl} 
                                     alt="" 
@@ -75,11 +92,23 @@ export default function VinylArtwork({ coverUrl, title, artist, isPlaying: initi
                     }}
                     transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    <img 
-                        src={coverUrl} 
-                        alt={title || "Album Cover"}
-                        className="w-full h-full object-cover pointer-events-none transition-transform duration-700 ease-out"
-                    />
+                    {videoUrl ? (
+                        <video 
+                            src={videoUrl} 
+                            poster={coverUrl}
+                            autoPlay 
+                            loop 
+                            muted 
+                            playsInline 
+                            className="w-full h-full object-cover pointer-events-none transition-transform duration-700 ease-out"
+                        />
+                    ) : (
+                        <img 
+                            src={coverUrl} 
+                            alt={title || "Album Cover"}
+                            className="w-full h-full object-cover pointer-events-none transition-transform duration-700 ease-out"
+                        />
+                    )}
                     
                     {/* Realistic Glossy Vinyl Jacket Texture & Sheen */}
                     <div className="absolute inset-0 bg-gradient-to-tr from-black/50 via-white/5 to-white/10 pointer-events-none z-10" />

@@ -143,7 +143,8 @@ export default function Home() {
                                 className="w-full max-w-[480px] sm:max-w-[540px] md:max-w-[580px] lg:max-w-full flex justify-center lg:justify-end"
                             >
                                 <VinylArtwork
-                                    coverUrl="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=900&auto=format&fit=crop"
+                                    coverUrl="/unstoppable_music_logo.png"
+                                    videoUrl="/Music_label_logo_animation_20260910152531.mp4"
                                     title="Unstoppable Music Identity"
                                     artist="Official Release"
                                     className="w-full max-w-[620px]"
